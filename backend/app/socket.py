@@ -6,10 +6,11 @@ import cv2         # Added import for OpenCV
 
 if os.environ.get('FLASK_ENV') == 'production':
     origins = [
-        'https://c08b-14-139-161-250.ngrok-free.app'
+        'https://innervoice.onrender.com'  # Replace with your hosted frontend URL
     ]
 else:
     origins = "*"
+
 
 # Initialize the SocketIO instance
 socketio = SocketIO(cors_allowed_origins=origins)

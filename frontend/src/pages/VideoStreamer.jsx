@@ -15,7 +15,7 @@ const VideoStreamer = () => {
 
     useEffect(() => {
         // Open socket connection with WebSocket transport
-        socketRef.current = io('http://10.16.49.34:5000');
+        socketRef.current = io('https://10.16.49.34:5000');
         socketRef.current.on("connect", () => {
             console.log("Connected to Socket.IO server");
         });
